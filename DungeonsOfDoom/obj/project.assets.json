@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elsa\\.nuget\\packages\\": {},
+    "C:\\Users\\Micke\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elsa\\Documents\\Kursmaterial\\Övningsprojekt\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
+      "projectUniqueName": "C:\\Projects\\DungeonsOfDoom_Group\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
       "projectName": "DungeonsOfDoom",
-      "projectPath": "C:\\Users\\Elsa\\Documents\\Kursmaterial\\Övningsprojekt\\DungeonsOfDoomStart\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
-      "packagesPath": "C:\\Users\\Elsa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elsa\\Documents\\Kursmaterial\\Övningsprojekt\\DungeonsOfDoomStart\\DungeonsOfDoom\\obj\\",
+      "projectPath": "C:\\Projects\\DungeonsOfDoom_Group\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
+      "packagesPath": "C:\\Users\\Micke\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\DungeonsOfDoom_Group\\DungeonsOfDoom\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Elsa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Micke\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

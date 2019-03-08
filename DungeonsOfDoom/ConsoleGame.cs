@@ -11,7 +11,7 @@ namespace DungeonsOfDoom
         Player player;
         Room[,] world;
         string messageToPlayer;
-
+        //Test
         const int WorldHeight = 5;
         const int WorldWidth = 20;
 
