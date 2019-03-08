@@ -688,23 +688,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elias\\.nuget\\packages\\": {},
+    "C:\\Users\\Micke\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Elias\\Source\\Repos\\DungeonsOfDoom\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
+      "projectUniqueName": "C:\\Projects\\DungeonsOfDoom_Group\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
       "projectName": "DungeonsOfDoom",
-      "projectPath": "C:\\Users\\Elias\\Source\\Repos\\DungeonsOfDoom\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
-      "packagesPath": "C:\\Users\\Elias\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Elias\\Source\\Repos\\DungeonsOfDoom\\DungeonsOfDoom\\obj\\",
+      "projectPath": "C:\\Projects\\DungeonsOfDoom_Group\\DungeonsOfDoom\\DungeonsOfDoom.csproj",
+      "packagesPath": "C:\\Users\\Micke\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\DungeonsOfDoom_Group\\DungeonsOfDoom\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Elias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Micke\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -729,7 +729,6 @@
       "netcoreapp2.1": {
         "dependencies": {
           "Microsoft.NETCore.App": {
-            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
