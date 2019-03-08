@@ -1,0 +1,33 @@
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.deps.json
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.runtimeconfig.json
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.runtimeconfig.dev.json
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.dll
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.pdb
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.csprojAssemblyReference.cache
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.csproj.CoreCompileInputs.cache
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.AssemblyInfoInputs.cache
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.AssemblyInfo.cs
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.dll
+C:\Users\Pontus Wittenmark\Desktop\DungeonsOfDoomStart\DungeonsOfDoom\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.pdb
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.deps.json
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.runtimeconfig.json
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.runtimeconfig.dev.json
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.dll
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.pdb
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.csprojAssemblyReference.cache
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.csproj.CoreCompileInputs.cache
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.AssemblyInfoInputs.cache
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.AssemblyInfo.cs
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.dll
+C:\Users\Elsa\Documents\Kursmaterial\Övningar instruktioner och lösningar\Vecka 2\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.pdb
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.deps.json
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.runtimeconfig.json
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.runtimeconfig.dev.json
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.dll
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\bin\Debug\netcoreapp2.1\DungeonsOfDoom.pdb
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.csprojAssemblyReference.cache
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.csproj.CoreCompileInputs.cache
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.AssemblyInfoInputs.cache
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.AssemblyInfo.cs
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.dll
+C:\Users\Elsa\Documents\Kursmaterial\Övningsprojekt\DungeonsOfDoomStart\DungeonsOfDoom\obj\Debug\netcoreapp2.1\DungeonsOfDoom.pdb
