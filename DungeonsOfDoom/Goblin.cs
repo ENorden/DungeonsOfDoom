@@ -8,7 +8,6 @@ namespace DungeonsOfDoom
     {
         public Goblin() : base(15, 5, "Goblin bones")
         {
-
         }
 
         public override string GetType()

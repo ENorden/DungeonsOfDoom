@@ -14,8 +14,7 @@ namespace DungeonsOfDoom
         }
 
         public static Consumable GenerateConsumable()
-        {
-           
+        {           
             if (RandomGen.WithinPercent(15))
                 return new SuperPotion();
             else if (RandomGen.WithinPercent(35))
