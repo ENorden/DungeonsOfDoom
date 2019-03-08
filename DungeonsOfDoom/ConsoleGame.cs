@@ -8,6 +8,7 @@ namespace DungeonsOfDoom
 {
     class ConsoleGame
     {
+        // HURRRA! DET FUNGERAR VAD GLAD JAG BLIR :D
         Player player;
         Room[,] world;
         string messageToPlayer;
