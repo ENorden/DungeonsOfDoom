@@ -8,6 +8,8 @@ namespace DungeonsOfDoom
 {
     class ConsoleGame
     {
+        // HURRRA! DET FUNGERAR VAD GLAD JAG BLIR :D
+        //Fukar för mig med/Elsa
         // HURRRA! DET FUNGERAR VAD GLAD JAG BLIR :D Men inte för Micke :D
         Player player;
         Room[,] world;
