@@ -8,15 +8,18 @@ namespace DungeonsOfDoom
 {
     abstract class Item : IPickUpable
     {
+       // Constructor
        public Item(string name)
         {
             Name = name;
             Count = 1;
         }
 
+        //Properties
         public string Name { get; }
         public int Count { get; set; }
 
+        //Metod
         public abstract void Use(Character character);
     }
 }
