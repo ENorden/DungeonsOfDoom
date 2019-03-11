@@ -1,9 +1,10 @@
-﻿using System;
+﻿using DungeonsOfDoom.Core.Characters;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Utils;
 
-namespace DungeonsOfDoom.Core.Item
+namespace DungeonsOfDoom.Core.Items
 {
     public class Weapon : Item
     {

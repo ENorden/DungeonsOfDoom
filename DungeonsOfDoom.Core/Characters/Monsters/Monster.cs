@@ -1,11 +1,12 @@
-﻿using System;
+﻿using DungeonsOfDoom.Core.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Utils;
 
-namespace DungeonsOfDoom.Core.Characters.Monster
+namespace DungeonsOfDoom.Core.Characters.Monsters
 {
     public abstract class Monster : Character, IPickUpable
     {

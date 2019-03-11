@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonsOfDoom.Core.Characters.Monster
+namespace DungeonsOfDoom.Core.Characters.Monsters
 {
     public class GiantRat : Monster
     {

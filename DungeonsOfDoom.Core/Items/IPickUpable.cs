@@ -1,4 +1,6 @@
-﻿namespace DungeonsOfDoom.Core.Item
+﻿using DungeonsOfDoom.Core.Characters;
+
+namespace DungeonsOfDoom.Core.Items
 {
     public interface IPickUpable
     {

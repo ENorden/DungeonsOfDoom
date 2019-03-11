@@ -1,5 +1,7 @@
-﻿using DungeonsOfDoom.Core.Characters;
-using DungeonsOfDoom.Core.Characters.Monster;
+﻿using DungeonsOfDoom.Core;
+using DungeonsOfDoom.Core.Characters;
+using DungeonsOfDoom.Core.Characters.Monsters;
+using DungeonsOfDoom.Core.Items;
 using System;
 using System.Collections.Generic;
 using System.Linq;

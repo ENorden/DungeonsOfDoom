@@ -1,4 +1,4 @@
-﻿using DungeonsOfDoom.Core.Item;
+﻿using DungeonsOfDoom.Core.Items;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,7 +75,7 @@ namespace DungeonsOfDoom.Core.Characters
                 victim.Health -= Damage + EquippedWeapon.Power;
         }
 
-        internal void UseInventoryItem(int inventoryIndex)
+        public void UseInventoryItem(int inventoryIndex)
         {
             IPickUpable item = null;
             if (inventoryIndex < Inventory.Count)

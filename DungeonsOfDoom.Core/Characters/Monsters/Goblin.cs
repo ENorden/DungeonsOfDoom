@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonsOfDoom.Core.Characters.Monster
+namespace DungeonsOfDoom.Core.Characters.Monsters
 {
-    public class Dragon : Monster
+    public class Goblin : Monster
     {
-        public Dragon() : base(60, 15, "Dragon bones")
+        public Goblin() : base(15, 5, "Goblin bones")
         {
         }
 
         public override string GetType()
         {
-            return "Dragon";
+            return "Goblin";
         }
     }
 }
