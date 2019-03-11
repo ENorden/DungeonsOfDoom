@@ -8,6 +8,7 @@ namespace DungeonsOfDoom
         {
             ConsoleGame game = new ConsoleGame();
             game.Play();
+            
         }
     }
 }

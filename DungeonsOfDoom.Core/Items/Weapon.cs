@@ -21,6 +21,7 @@ namespace DungeonsOfDoom.Core.Items
         /// <returns>A weapon type depending on a fixed frequency</returns>
         public static Weapon GenerateWeapon()
         {
+
             if (RandomGen.WithinPercent(15))
                 return new Weapon("Axe", 5);
             else if (RandomGen.WithinPercent(35))
