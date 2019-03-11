@@ -16,6 +16,10 @@ namespace DungeonsOfDoom.Core.Items
             HealthRestore = healthRestore;
         }
 
+        /// <summary>
+        /// Generates a consumable item depending on a fixed frequency
+        /// </summary>
+        /// <returns>A SuperPotion, Potion and Muffin depending on a fixed frequency</returns>
         public static Consumable GenerateConsumable()
         {           
             if (RandomGen.WithinPercent(15))
@@ -26,6 +30,10 @@ namespace DungeonsOfDoom.Core.Items
                 return new Muffin();
         }
 
+        /// <summary>
+        /// Use a consumable item
+        /// </summary>
+        /// <param name="character">The character to use the consumable item</param>
         public override void Use(Character character)
         {
             character.Health += HealthRestore;
