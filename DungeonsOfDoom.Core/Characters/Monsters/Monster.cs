@@ -45,6 +45,7 @@ namespace DungeonsOfDoom.Core.Characters.Monsters
         {
             if (RandomGen.WithinPercent(15))
                 return new Dragon();
+            
             else if (RandomGen.WithinPercent(35))
                 return new Goblin();
             else
