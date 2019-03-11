@@ -19,6 +19,8 @@ namespace DungeonsOfDoom
         const int WorldHeight = 5;
         const int WorldWidth = 20;
 
+        
+
         public void Play()
         {
             CreatePlayer();
@@ -59,7 +61,7 @@ namespace DungeonsOfDoom
             if (world[player.X, player.Y].Monster == null && world[player.X, player.Y].Item != null)
             {
                 player.AddItem(world[player.X, player.Y].Item);
-
+                    
                 messageToPlayer += $"You have picked up item: {world[player.X, player.Y].Item.Name}\n";
                 world[player.X, player.Y].Item = null;
 

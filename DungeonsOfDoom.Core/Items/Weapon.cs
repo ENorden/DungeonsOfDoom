@@ -26,6 +26,7 @@ namespace DungeonsOfDoom.Core.Items
                 return new Weapon("Spear", 2);
         }
 
+
         public override void Use(Character character)
         {
             if (character is Player) // Replace this
