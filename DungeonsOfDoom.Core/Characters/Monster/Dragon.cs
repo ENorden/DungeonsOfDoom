@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonsOfDoom
+namespace DungeonsOfDoom.Core.Characters.Monster
 {
-    class Dragon : Monster
+    public class Dragon : Monster
     {
         public Dragon() : base(60, 15, "Dragon bones")
         {

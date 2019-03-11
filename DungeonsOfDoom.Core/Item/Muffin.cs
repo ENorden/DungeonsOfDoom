@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonsOfDoom
+namespace DungeonsOfDoom.Core.Item
 {
-    class Muffin : Consumable
+    public class Muffin : Consumable
     {
         public Muffin() : base("Muffin", 5)
         {

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonsOfDoom
+namespace DungeonsOfDoom.Core.Characters
 {
-    abstract class Character
+    public abstract class Character
     {
         //Properties
         public virtual int Health { get; set; }

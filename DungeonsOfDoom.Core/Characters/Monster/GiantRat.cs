@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonsOfDoom
+namespace DungeonsOfDoom.Core.Characters.Monster
 {
-    class GiantRat : Monster
+    public class GiantRat : Monster
     {
         public GiantRat() : base(5, 1, "Rat bones")
         {

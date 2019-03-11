@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Utils;
 
-namespace DungeonsOfDoom
+namespace DungeonsOfDoom.Core.Characters.Monster
 {
-    abstract class Monster : Character, IPickUpable
+    public abstract class Monster : Character, IPickUpable
     {
         public int Count { get; set; }
         public static int MonsterCount { get; private set; } = 0;

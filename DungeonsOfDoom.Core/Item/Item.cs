@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DungeonsOfDoom
+namespace DungeonsOfDoom.Core.Item
 {
-    abstract class Item : IPickUpable
+    public abstract class Item : IPickUpable
     {
        // Constructor
        public Item(string name)

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using Utils;
 
-namespace DungeonsOfDoom
+namespace DungeonsOfDoom.Core.Item
+
 {
-    class Consumable : Item
+    public class Consumable : Item
     {
         public int HealthRestore { get; }
 

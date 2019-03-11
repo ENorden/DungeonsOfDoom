@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DungeonsOfDoom.Core.Characters;
+using DungeonsOfDoom.Core.Characters.Monster;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

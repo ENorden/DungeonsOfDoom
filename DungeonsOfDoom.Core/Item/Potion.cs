@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DungeonsOfDoom
+namespace DungeonsOfDoom.Core.Item
 {
-    class Potion : Consumable
+    public class Potion : Consumable
     {
         public Potion() : base("Potion", 10)
         {

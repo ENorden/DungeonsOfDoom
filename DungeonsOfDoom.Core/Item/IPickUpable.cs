@@ -1,6 +1,6 @@
-﻿namespace DungeonsOfDoom
+﻿namespace DungeonsOfDoom.Core.Item
 {
-    interface IPickUpable
+    public interface IPickUpable
     {
         string Name { get; }
         int Count { get; set; }
