@@ -10,8 +10,11 @@ namespace DungeonsOfDoom.Core.Characters.Monsters
 {
     public abstract class Monster : Character, IPickUpable
     {
+        /// <summary>Number of Monster on a given IPickUpable space</summary>
         public int Count { get; set; }
+        /// <summary>The total number of Monster instances</summary>
         public static int MonsterCount { get; private set; } = 0;
+        /// <summary>The name for the Monster in an inventory</summary>
         public string Name { get; }
 
         public override int Health
