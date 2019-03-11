@@ -12,9 +12,13 @@ namespace DungeonsOfDoom.Core.Characters
         //Properties
         public string Name { get; }
 
+        /// <summary> Describes the player's X position </summary>
         public int X { get; set; }
+
+        /// <summary> Describes the player's Y position </summary>
         public int Y { get; set; }
 
+        /// <summary>The player's current health, cannot exceed the maximum value</summary>
         public override int Health
         {
             get { return base.Health; }
@@ -29,7 +33,9 @@ namespace DungeonsOfDoom.Core.Characters
         private const int BaseDamage = 3;
         private readonly int maxHealth = 30;
 
+        /// <summary>Contains every IPickUpable in the player's inventory</summary>
         public List<IPickUpable> Inventory { get; }
+        /// <summary>The weapon currently equipped by the player</summary>
         public Weapon EquippedWeapon { get; set; }
 
         //Constructor
@@ -43,8 +49,10 @@ namespace DungeonsOfDoom.Core.Characters
             maxHealth = health;
             Health = health;
         }
-        
+
         //Methods
+        /// <summary>Adds an IPickUpable to the player's inventory</summary>
+        /// <param name="itemToAdd">The IPickUpable to add</param>
         public void AddItem(IPickUpable itemToAdd)
         {
             bool exists = false;
@@ -67,6 +75,8 @@ namespace DungeonsOfDoom.Core.Characters
 
         }
 
+        /// <summary>The player attacks the victim using their equipped weapon</summary>
+        /// <param name="victim">The character that is attacked</param>
         public override void Attack(Character victim)
         {
             if (EquippedWeapon == null)
@@ -75,6 +85,8 @@ namespace DungeonsOfDoom.Core.Characters
                 victim.Health -= Damage + EquippedWeapon.Power;
         }
 
+        /// <summary>The player uses the specified IPickUpable</summary>
+        /// <param name="inventoryIndex">The index in inventory of the IPickUpable to use</param>
         public void UseInventoryItem(int inventoryIndex)
         {
             IPickUpable item = null;
