@@ -173,10 +173,10 @@ namespace DungeonsOfDoom
                         Console.Write(player.Name);
                         break;
                     case StatToDisplay.Level:
-                        //Console.Write($"Level: {player.Level}");
+                        Console.Write($"Level: {player.Level}");
                         break;
                     case StatToDisplay.Exp:
-                        //Console.Write($"Experience: {player.Exp}");
+                        Console.Write($"Experience: {player.Exp}");
                         break;
                     case StatToDisplay.Health:
                         Console.Write($"Health: {player.Health}");
