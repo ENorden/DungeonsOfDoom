@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Utils;
 
-namespace DungeonsOfDoom.Core.Items
+namespace DungeonsOfDoom.Core.Items.Consumables
 
 {
     public class Consumable : Item

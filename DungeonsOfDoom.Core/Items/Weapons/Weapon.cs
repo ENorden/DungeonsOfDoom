@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Utils;
 
-namespace DungeonsOfDoom.Core.Items
+namespace DungeonsOfDoom.Core.Items.Weapons
 {
     public class Weapon : Item
     {
@@ -21,13 +21,14 @@ namespace DungeonsOfDoom.Core.Items
         /// <returns>A weapon type depending on a fixed frequency</returns>
         public static Weapon GenerateWeapon()
         {
-
-            if (RandomGen.WithinPercent(15))
-                return new Weapon("Axe", 5);
+            if (RandomGen.WithinPercent(3))
+                return new TwoHandedAxe();
+            else if (RandomGen.WithinPercent(15))
+                return new Axe();
             else if (RandomGen.WithinPercent(35))
-                return new Weapon("Sword", 3);
+                return new Sword();
             else
-                return new Weapon("Spear", 2);
+                return new Spear();
         }
 
         /// <summary>

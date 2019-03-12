@@ -2,6 +2,8 @@
 using DungeonsOfDoom.Core.Characters;
 using DungeonsOfDoom.Core.Characters.Monsters;
 using DungeonsOfDoom.Core.Items;
+using DungeonsOfDoom.Core.Items.Consumables;
+using DungeonsOfDoom.Core.Items.Weapons;
 using System;
 using System.Collections.Generic;
 using System.Linq;
