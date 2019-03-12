@@ -1,4 +1,5 @@
 ﻿using DungeonsOfDoom.Core.Items;
+using DungeonsOfDoom.Core.Items.Weapons;
 using System;
 using System.Collections.Generic;
 using System.Linq;
