@@ -30,14 +30,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="DungeonsOfDoom.Core.Characters.Character" Collapsed="true">
-    <Position X="14.25" Y="2" Width="1.5" />
+    <Position X="13.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAEACACAAAAAAAACAAAAAABAAIAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Characters\Character.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="DungeonsOfDoom.Core.Characters.Player" Collapsed="true">
-    <Position X="13.25" Y="0.75" Width="1.5" />
+    <Position X="14.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAIAgAAAAAAgAAAAAQAgIAAAAIAAAAAAgAAYAA=</HashCode>
       <FileName>Characters\Player.cs</FileName>
