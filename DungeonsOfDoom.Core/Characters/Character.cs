@@ -15,14 +15,16 @@ namespace DungeonsOfDoom.Core.Characters
         public bool Poisoned { get; set; }
         /// <summary>The amount of poison damage taken from the current posion</summary>
         public int PoisonDamageTaken { get; set; }
+        public virtual int Exp { get; set; }
 
         //Constructor
-        public Character(int health, int damage)
+        public Character(int health, int damage, int exp)
         {
             Health = health;
             Damage = damage;
             Poisoned = false;
             PoisonDamageTaken = 0;
+            Exp = exp;
         }
 
         //Overridable method

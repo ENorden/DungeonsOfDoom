@@ -11,6 +11,7 @@ namespace DungeonsOfDoom.Core.Characters
     {
         //Properties
         public string Name { get; }
+        public int Level { get; private set; }
 
         /// <summary> Describes the player's X position </summary>
         public int X { get; set; }
@@ -33,13 +34,29 @@ namespace DungeonsOfDoom.Core.Characters
         private const int BaseDamage = 3;
         private readonly int maxHealth = 30;
 
+        private int exp;
+        public override int Exp
+        {
+            get { return exp; }
+            set
+            {
+                if (value >= 20)
+                {
+                    Level++;
+                    exp = value % 20;
+                }
+                else
+                    exp = value;
+            }
+        }
+
         /// <summary>Contains every IPickUpable in the player's inventory</summary>
         public List<IPickUpable> Inventory { get; }
         /// <summary>The weapon currently equipped by the player</summary>
         public Weapon EquippedWeapon { get; set; }
 
         //Constructor
-        public Player(string name, int health, int x, int y) : base(health, BaseDamage)
+        public Player(string name, int health, int x, int y) : base(health, BaseDamage, 0)
         {
             Name = name;
             X = x;
@@ -48,6 +65,8 @@ namespace DungeonsOfDoom.Core.Characters
             Poisoned = false;
             maxHealth = health;
             Health = health;
+            Level = 1;
+            exp = 0;
         }
 
         //Methods

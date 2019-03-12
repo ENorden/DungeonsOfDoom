@@ -6,7 +6,7 @@ namespace DungeonsOfDoom.Core.Characters.Monsters
 {
     public class GiantRat : Monster
     {
-        public GiantRat() : base(5, 1, "Rat bones")
+        public GiantRat() : base(5, 1, "Rat bones", 6)
         {
         }
         public override void Attack(Character victim)

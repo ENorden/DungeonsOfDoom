@@ -6,7 +6,7 @@ namespace DungeonsOfDoom.Core.Characters.Monsters
 {
     public class Goblin : Monster
     {
-        public Goblin() : base(15, 5, "Goblin bones")
+        public Goblin() : base(15, 5, "Goblin bones", 8)
         {
         }
 

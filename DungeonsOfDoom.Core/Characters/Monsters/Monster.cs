@@ -29,7 +29,7 @@ namespace DungeonsOfDoom.Core.Characters.Monsters
         }
 
 
-        public Monster(int health, int damage, string name) : base(health, damage)
+        public Monster(int health, int damage, string name, int exp) : base(health, damage, exp)
         {
             MonsterCount++;
             Name = name;

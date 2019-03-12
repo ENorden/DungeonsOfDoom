@@ -6,7 +6,7 @@ namespace DungeonsOfDoom.Core.Characters.Monsters
 {
     public class Dragon : Monster
     {
-        public Dragon() : base(60, 15, "Dragon bones")
+        public Dragon() : base(60, 15, "Dragon bones", 10)
         {
         }
 

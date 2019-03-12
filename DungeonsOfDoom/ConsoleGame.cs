@@ -136,6 +136,9 @@ namespace DungeonsOfDoom
         {
             Console.WriteLine(player.Name);
             Console.WriteLine($"Health: {player.Health}");
+            Console.WriteLine($"XP: {player.Exp}");
+            Console.WriteLine($"Level: {player.Level}");
+
             if (player.EquippedWeapon != null) 
                 Console.WriteLine($"Attack Damage: {player.Damage+player.EquippedWeapon.Power}");
             else
@@ -230,6 +233,7 @@ namespace DungeonsOfDoom
                 {
                     messageToPlayer += $"You killed {enemy.GetType()} and picked up {enemy.Name}\n";
                     player.AddItem(enemy);
+                    player.Exp += enemy.Exp;
                     world[player.X, player.Y].Monster = null;
                 }
 
