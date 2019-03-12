@@ -86,6 +86,9 @@ namespace DungeonsOfDoom
                 {
                     world[x, y] = new Room();
 
+                    if (RandomGen.WithinPercent(3))
+                        world[x, y].IsBlocked = true;
+
                     if (RandomGen.WithinPercent(10))
                         world[x, y].Monster = Monster.GenerateMonster();
 
@@ -109,6 +112,12 @@ namespace DungeonsOfDoom
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("P");
+                        Console.ResetColor();
+                    }
+                    else if (world[x, y].IsBlocked == true)
+                    {
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.Write("O");
                         Console.ResetColor();
                     }
                     else if (world[x, y].Monster != null)
@@ -193,7 +202,7 @@ namespace DungeonsOfDoom
 
             if (isValidKey &&
                 newX >= 0 && newX < world.GetLength(0) &&
-                newY >= 0 && newY < world.GetLength(1))
+                newY >= 0 && newY < world.GetLength(1) && world[newX, newY].IsBlocked == false)
             {
                 player.X = newX;
                 player.Y = newY;

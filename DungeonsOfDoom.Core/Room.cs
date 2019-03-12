@@ -12,5 +12,6 @@ namespace DungeonsOfDoom.Core
     {
         public Monster Monster { get; set; }
         public Item Item { get; set; }
+        public bool IsBlocked { get; set; }
     }
 }
