@@ -17,20 +17,25 @@ namespace DungeonsOfDoom
     {
         Player player;
         Room[,] world;
-        string messageToPlayer;
+        List<string> messagesToPlayer = new List<string>();
+        int previousMessageCount = 0;
         const int WorldHeight = 5;
         const int WorldWidth = 20;
 
-        
+        enum StatToDisplay
+        {
+            Name, Level, Exp, Health, Attack, Equipped, Monster, Messages
+        };
 
         public void Play()
         {
             CreatePlayer();
             CreateWorld();
+            Console.CursorVisible = false;
+            Console.Clear();
 
             do
             {
-                Console.Clear();
                 DisplayWorld();
                 DisplayStats();
                 DisplayInventory();
@@ -38,24 +43,31 @@ namespace DungeonsOfDoom
                 PickUpItem();
             } while (player.Health > 0 && Monster.MonsterCount > 0);
 
+            Console.CursorVisible = true;
             GameOver();
         }
 
         private void DisplayInventory()
         {
-            Console.WriteLine("Backpack contains: ");
-            for (int i = 0; i < player.Inventory.Count; i++)
+            Console.SetCursorPosition(WorldWidth + 2, 0);
+            Console.Write("Backpack contains: ");
+            int i = 0;
+            for (; i < player.Inventory.Count; i++)
             {
+                Console.SetCursorPosition(WorldWidth + 2, i + 1);
                 IPickUpable pickUp = player.Inventory[i];
                 if (pickUp.Count == 1)
                 {
-                    Console.WriteLine($"{i + 1}. {pickUp.Name}");
+                    Console.Write($"{i + 1}. {pickUp.Name}");
                 }
                 else if (pickUp.Count > 1)
                 {
-                    Console.WriteLine($"{i + 1}. {pickUp.Name} x{pickUp.Count}");
+                    Console.Write($"{i + 1}. {pickUp.Name} x{pickUp.Count}");
                 }
+                ClearLine();
             }
+            Console.SetCursorPosition(WorldWidth + 2, i + 1);
+            ClearLine();
         }
 
         private void PickUpItem()
@@ -64,7 +76,7 @@ namespace DungeonsOfDoom
             {
                 player.AddItem(world[player.X, player.Y].Item);
                     
-                messageToPlayer += $"You have picked up item: {world[player.X, player.Y].Item.Name}\n";
+                AddMessage($"You have picked up item: {world[player.X, player.Y].Item.Name}");
                 world[player.X, player.Y].Item = null;
 
             }
@@ -103,6 +115,7 @@ namespace DungeonsOfDoom
 
         private void DisplayWorld()
         {
+            Console.SetCursorPosition(0, 0);
             for (int y = 0; y < world.GetLength(1); y++)
             {
                 for (int x = 0; x < world.GetLength(0); x++)
@@ -143,29 +156,70 @@ namespace DungeonsOfDoom
             }
         }
 
+        /// <summary>Clears the rest of the console line from the current cursor position</summary>
+        private void ClearLine()
+        {
+            Console.Write(new string(' ', Console.WindowWidth - Console.CursorLeft));
+        }
+
         private void DisplayStats()
         {
-            Console.WriteLine(player.Name);
-            Console.WriteLine($"Health: {player.Health}");
-            Console.WriteLine($"XP: {player.Exp}");
-            Console.WriteLine($"Level: {player.Level}");
-
-            if (player.EquippedWeapon != null) 
-                Console.WriteLine($"Attack Damage: {player.Damage+player.EquippedWeapon.Power}");
-            else
-                Console.WriteLine($"Attack Damage: {player.Damage}");
-            Console.WriteLine();
-
-            if (world[player.X, player.Y].Monster != null)
+            foreach (StatToDisplay stat in Enum.GetValues(typeof(StatToDisplay)))
             {
-                Console.WriteLine($"Monster: {world[player.X, player.Y].Monster.GetType()}");
+                Console.SetCursorPosition(0, WorldHeight + (int)stat);
+                switch (stat)
+                {
+                    case StatToDisplay.Name:
+                        Console.Write(player.Name);
+                        break;
+                    case StatToDisplay.Level:
+                        //Console.Write($"Level: {player.Level}");
+                        break;
+                    case StatToDisplay.Exp:
+                        //Console.Write($"Experience: {player.Exp}");
+                        break;
+                    case StatToDisplay.Health:
+                        Console.Write($"Health: {player.Health}");
+                        break;
+                    case StatToDisplay.Attack:
+                        if (player.EquippedWeapon != null)
+                            Console.Write($"Attack Damage: {player.Damage + player.EquippedWeapon.Power}");
+                        else
+                            Console.Write($"Attack Damage: {player.Damage}");
+                        break;
+                    case StatToDisplay.Equipped:
+                        if (player.EquippedWeapon != null)
+                            Console.Write($"Equipped Weapon: {player.EquippedWeapon.Name}");
+                        break;
+                    case StatToDisplay.Monster:
+                        if (world[player.X, player.Y].Monster != null)
+                            Console.Write($"Monster: {world[player.X, player.Y].Monster.GetType()}");
+                        break;
+                    case StatToDisplay.Messages:
+                        DisplayMessages();
+                        break;
+                }
+                ClearLine();
             }
-            else
+        }
+
+        private void DisplayMessages()
+        {
+            int count = messagesToPlayer.Count;
+            int i = 0;
+            for (; i < count; i++)
             {
+                Console.Write(messagesToPlayer[i]);
+                ClearLine();
                 Console.WriteLine();
             }
-            Console.WriteLine(messageToPlayer);
-            messageToPlayer = string.Empty;
+            for (; i < previousMessageCount; i++)
+            {
+                ClearLine();
+                Console.WriteLine();
+            }
+            previousMessageCount = count;
+            messagesToPlayer.Clear();
         }
 
         private void AskForAction()
@@ -174,7 +228,7 @@ namespace DungeonsOfDoom
             int newY = player.Y;
             bool isValidKey = true;
 
-            ConsoleKeyInfo keyInfo = Console.ReadKey();
+            ConsoleKeyInfo keyInfo = Console.ReadKey(true);
             switch (keyInfo.Key)
             {
                 case ConsoleKey.RightArrow: newX++; break;
@@ -215,10 +269,15 @@ namespace DungeonsOfDoom
             {
                 if (player.Poisoned)
                 {
-                    messageToPlayer += "You took poison damage!\n";
+                    AddMessage("You took poison damage!");
                 }
                 player.TurnPassed();
             }
+        }
+
+        private void AddMessage(string msg)
+        {
+            messagesToPlayer.Add(msg);
         }
 
         private void Fight()
@@ -231,18 +290,18 @@ namespace DungeonsOfDoom
                 {
                     if (player.EquippedWeapon == null)
                     {
-                        messageToPlayer += $"You attacked {enemy.GetType()} with your fist\n";
+                        AddMessage($"You attacked {enemy.GetType()} with your fist");
                     }
                     else
                     {
-                        messageToPlayer += $"You attacked {enemy.GetType()} with your {player.EquippedWeapon.Name}\n";
+                        AddMessage($"You attacked {enemy.GetType()} with your {player.EquippedWeapon.Name}");
                     }
                     enemy.Attack(player);
-                    messageToPlayer += $"{enemy.GetType()} attacked for {enemy.Damage} damage\n";
+                    AddMessage($"{enemy.GetType()} attacked for {enemy.Damage} damage");
                 }
                 else
                 {
-                    messageToPlayer += $"You killed {enemy.GetType()} and picked up {enemy.Name}\n";
+                    AddMessage($"You killed {enemy.GetType()} and picked up {enemy.Name}");
                     player.AddItem(enemy);
                     player.Exp += enemy.Exp;
                     world[player.X, player.Y].Monster = null;
